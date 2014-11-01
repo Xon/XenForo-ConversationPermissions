@@ -1,4 +1,4 @@
-XenForo_SVConversationPermissions
+XenForo-SVConversationPermissions
 ======================
 
 New Conversation Permissions.
