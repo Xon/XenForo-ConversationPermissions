@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon addon_id="SVConversationPermissions" title="Conversation Reply Permissions" version_string="1.0.1" version_id="10001" url="https://xenforo.com/community/resources/conversation-reply-permissions.3646/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+<addon addon_id="SVConversationPermissions" title="Conversation Reply Permissions" version_string="1.0.2" version_id="10002" url="https://xenforo.com/community/resources/conversation-reply-permissions.3646/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
@@ -18,12 +18,14 @@
     <permissions>
       <permission permission_group_id="conversation" permission_id="canReply" permission_type="flag" default_value="unset" interface_group_id="conversationPermissions" display_order="13"/>
       <permission permission_group_id="conversation" permission_id="replyLimit" permission_type="integer" depend_permission_id="canReply" default_value_int="-1" interface_group_id="conversationPermissions" display_order="14"/>
+      <permission permission_group_id="conversation" permission_id="emailParticipantLimit" permission_type="integer" depend_permission_id="canReply" default_value_int="-1" interface_group_id="conversationPermissions" display_order="15"/>
     </permissions>
     <interface_groups/>
   </permissions>
   <phrases>
     <phrase title="permission_conversation_canReply" version_id="1" version_string="1.0.0"><![CDATA[Can Reply to Conversation]]></phrase>
     <phrase title="permission_conversation_replyLimit" version_id="1" version_string="1.0.0"><![CDATA[Conversation Reply Limit]]></phrase>
+    <phrase title="permission_conversation_emailParticipantLimit" version_id="10002" version_string="1.0.2"><![CDATA[Participant limit for email]]></phrase>
   </phrases>
   <route_prefixes/>
   <style_properties/>
